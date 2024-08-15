@@ -1,0 +1,461 @@
+/* Global */
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 33px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+main {
+    padding: 0 100px;
+    background-color: #0D1319;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.num {
+    line-height: 280px;
+    font-size: 350px;
+    color: #E56000
+}
+
+
+.link_el {
+    width: 100%;
+    display: flex;
+    margin: 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #B8B8B8;
+}
+
+.link_el_l {
+    width: 50%;
+    color: #B8B8B8;
+}
+
+.link_el_r {
+    width: 50%;
+    color: #EEEDED;
+}
+
+
+.nav_item {
+    width: 50%;
+}
+
+.nav_block {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav_item_p {
+    font-size: 80px;
+}
+
+.nav_item_text {
+    font-size: 30px;
+    color: #E56000;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Header */
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/main_1.png');
+}
+
+.nav_header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.nav_header ul li {
+    user-select: none;
+    cursor: pointer;
+}
+
+.nav_header ul li:active {
+    color: silver;
+}
+
+/* Section 1 */
+.sec1 {
+    display: flex;
+}
+
+.sec1_title {
+    width: 45%;
+}
+
+.sec1_nav {
+    width: 55%;
+}
+
+.link_header {
+    margin-bottom: 50px;
+}
+
+
+/* Section 2 */
+.sec2 {
+    display: flex;
+}
+
+.sec2_text {
+    width: 55%;
+}
+
+/* Section 3 */
+.over_wrap {
+    display: flex;
+    padding: 100px 0;
+}
+
+.over_title {
+    width: 45%;
+}
+
+.over_title h3 {
+    font-size: 100px;
+    color: #0D1319;
+    text-transform: uppercase;
+    text-shadow: #E56000 3px 3px 3px;
+}
+
+.over_text {
+    width: 55%;
+}
+
+
+/* Section 4 */
+.swot_wrap {
+    display: flex;
+    margin: 100px 0;
+}
+
+.swot_l {
+    width: 55%;
+    padding-right: 60px;
+}
+
+.swot_r {
+    width: 45%;
+}
+
+.swot_title {
+    font-size: 77px;
+    text-transform: uppercase;
+    color: #E56000;
+    margin-bottom: 50px;
+}
+
+/*Section5*/
+
+.user-wrap
+{
+    display: block;
+    width: 100%; 
+    
+}
+.user_l, .user_r
+{   display: flex;
+    margin: 80px 80px;
+    padding: 30px;
+    box-sizing: border-box; 
+    width: 95%;
+    
+}
+
+
+.user_l {
+    border: 3px solid #E56000;
+    justify-content: flex-start;
+    margin-left: -100px;
+    
+}
+
+.user_r {
+    border: 3px solid #E56000;
+    justify-content: flex-end;
+    margin-left: 175px;
+
+}
+
+.user_img {
+   margin-right: 40px;
+   width: 30%;
+   align-self: center;
+}
+
+.user_img img {
+    width: 389px;
+    height: 539px;
+    object-fit: cover;
+}
+
+.user_text
+{
+    width: 70%;
+    align-self: center;
+}
+
+/* Section6 */
+
+.market_wrap
+{
+    display: flex;
+}
+
+.market_logo {
+    width: 33.33%;
+    margin-bottom: 30px;
+}
+
+.market_list {
+   width: 33.33%;
+  
+}
+.market_item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.market_sign {
+    display: flex;
+    width: 51px;
+    height: 51px;
+    color:#E56000;
+    margin-left:20px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.market_text
+{
+    font-size: 25px;
+    line-height: 30.48px;
+}
+
+/* Section7 */
+
+.map_container
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.map_items
+{
+ display: flex;  
+ justify-content: end;
+ margin-top: 40px;
+}
+
+.map_main
+{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    border: 3px solid #E56000;
+    background-color:#E56000;  
+    width: 255px;
+    height: 100px;
+    position: relative;
+}
+
+.map_item {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border: 3px solid #E56000;
+    width: 189px;
+    height: 74px;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    position: relative;
+}
+        
+.map_main::after {
+    content: '';
+    position: absolute;
+    width: 1100px;
+    border: 3px solid #E56000; 
+    top: 50%;  
+    left: 100%;  
+    transform: translateY(-50%);  
+}
+
+.map_item::after{
+    content: '↑'; 
+    position: absolute;
+    color:  #E56000; 
+    font-size: 165px; 
+    bottom: -130px; 
+}
+
+/* Section8 */
+
+
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    main {
+        padding: 0 20px;
+    }
+
+    .sec1,
+    .sec2,
+    .over_wrap,
+    .swot_wrap,
+    .user_wrap,
+    .market_wrap,
+    .map_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec1_title,
+    .sec1_nav,
+    .over_title,
+    .over_text,
+    .swot_l,
+    .swot_r,
+    .user_l,
+    .user_r,
+    .market_logo,
+    .market_list {
+        width: 100%;
+    }
+
+    .user_l,
+    .user_r {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+    }
+
+    .user_img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .market_logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .market_list {
+        width: 100%;
+        text-align: center;
+    }
+
+    .map_container {
+        flex-direction: column;
+    }
+
+    .map_items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map_item {
+        margin: 10px 0;
+    }
+
+    .map_main {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    main {
+        padding: 0 50px;
+    }
+
+    .sec1,
+    .sec2,
+    .over_wrap,
+    .swot_wrap,
+    .user_wrap,
+    .market_wrap,
+    .map_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sec1_title,
+    .sec1_nav,
+    .over_title,
+    .over_text,
+    .swot_l,
+    .swot_r,
+    .user_l,
+    .user_r,
+    .market_logo,
+    .market_list {
+        width: 100%;
+    }
+
+    .user_l,
+    .user_r {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0;
+    }
+
+    .user_img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .market_logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .market_list {
+        width: 100%;
+        text-align: center;
+    }
+
+    .map_container {
+        flex-direction: column;
+    }
+
+    .map_items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .map_item {
+        margin: 10px 0;
+    }
+
+    .map_main {
+        width: 100%;
+        height: auto;
+    }
+}
